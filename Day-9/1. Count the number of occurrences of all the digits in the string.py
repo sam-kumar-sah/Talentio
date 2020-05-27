@@ -46,32 +46,25 @@ solution: python
 ================================
 s=input()
 l=[]
-if len(s)==0:
-    for i in range(10):
-        if i==0:
-            print(i,1)
-        else:
-            print(i,0)
-else:
-    for i in s:
-        l.append(int(i))
-    l.sort()
-    h={}
-    for i in l:
-        if i not in h:
-            h[i]=1
-        else:
-            h[i]+=1
-    v=list(h.values())
-    k=list(h.keys())
-    #print(k,v)
-    p=0
-    for i in range(10):
-        if i in k:
-            print(i,v[p])
-            p+=1
-        else:
-            print(i,0)
+for i in s:
+    l.append(int(i))
+l.sort()
+h={}
+for i in l:
+    if i not in h:
+        h[i]=1
+    else:
+        h[i]+=1
+v=list(h.values())
+k=list(h.keys())
+#print(k,v)
+p=0
+for i in range(10):
+    if i in k:
+        print(i,v[p])
+        p+=1
+    else:
+        print(i,0)
             
 ====================================
 solution: c Language

@@ -46,7 +46,6 @@ def sam(l):
     ss=""
     for i in s:
         ss+=i
-    #print("s=",ss)
     return ss
 
 super=""
